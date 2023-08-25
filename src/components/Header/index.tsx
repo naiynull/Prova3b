@@ -4,18 +4,21 @@ import Logo from "../../assets/truck.svg"
 export function Header() {
   return (
     <S.Header>
-      <picture>
-        <img src={Logo} alt="Logo" />
-      </picture>
+
       <S.NavBar>
+      <div className="sidenav">
         <ul>
           <li>
-            <a href="/">Página Inicial</a>
+            <a>Restaurante</a>
           </li>
           <li>
-            <a href="/list">Lista</a>
+            <a id="to" href="/topicos">Topicos</a>
+          </li>
+          <li>
+            <a id="de" href="/descricao">Descrição</a>
           </li>
         </ul>
+        </div>
       </S.NavBar>
     </S.Header>
   )
